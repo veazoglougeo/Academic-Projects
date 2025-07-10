@@ -1,0 +1,251 @@
+/*
+Ορισμός background χρώματος, διάταξης και ευθυγράμμισης,
+ρύθμιση θέσης και μεγέθους, χειρισμός υπερχείλισης.
+*/
+.navbar {
+    background-color: #667292;
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center; 
+
+}
+
+/*
+Ορισμός χρώματος, επιλογή γραμματοσειράς,
+ρύθμιση μορφής κειμένου και μεγέθους.
+*/
+.navbar a {
+    color: #f1e3dd;
+    font-family: ibm_bold;
+    font-size:14pt;
+    font-weight:bold;
+    text-decoration:none;
+    padding:20px 50px;
+    transition: 0.5s
+}
+
+/*
+Αλλαγή χρώματος με hover.
+*/
+.navbar a:hover {
+    background: #59617e;
+    color: #f1e3dd;
+}
+
+/*
+Αλλαγή χρώματος στην active σελίδα.
+*/
+.navbar a.active {
+    background: #4a567c;
+    color: #fff8f5;
+}
+
+/*
+Ορισμός background χρώματος, επιλογή γραμματοσειράς,
+οργάνωση κειμένου στο κέντρο και ρύθμιση περιθωρίων.
+*/
+body {
+    background-color: #f1e3dd;
+    font-family: ibm;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color:#454d64;
+}
+
+
+/*
+Ορισμός background χρώματος, επιλογή γραμματοσειράς,
+ορισμός χρώματος και μεγέθους κειμένου,
+ορισμός μεγέθους footer.
+*/
+footer {
+    background-color: #667292;
+    font-family: ibm_bold;
+    font-size: 14pt;
+    color: #f1e3dd;
+    padding: 20px;
+}
+
+/*
+Διόρθωση του κενού που εμφανιζόταν
+ανάμεσα στο header και στο navbar.
+*/
+h1 {
+    margin: 0;
+}
+
+/*
+Ορισμός background χρώματος και
+χρώματος κειμένου
+*/
+header {
+    background-color: #667292;
+    color: #f1e3dd;
+    font-family: ibm_bold;
+}
+
+/*
+Eπεξεργασία εικόνας aircodition.
+*/
+.aircondition{
+    margin: 20px;
+    width: 300px;
+    height: 140px;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Eπεξεργασία εικόνας aircodition.
+*/
+.fridge{
+    margin: 20px;
+    width: 120px;
+    height: 250px;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tag {
+    margin: 20px;
+    width: 120px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tag2 {
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Ορισμός μεγέθους γραμματοσειράς παραγράφου.
+*/
+p {
+    font-size: 14pt
+}
+
+/*
+Ορισμός χρώματος link για footer, header.
+*/
+#link {
+    color: #f1e3dd;
+    text-decoration: none;
+}
+
+/*
+Ορισμός χρώματος link του figcaptions.
+*/
+figcaption {
+    color: #454d64;
+}
+
+/*
+Το figure είναι clickable μόνο από την εικόνα και το κείμενο.
+*/
+figure {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+/*
+Υπογράμμιση h κατηγορίας και ρύθμιση αποστάσεων top και bottom.
+*/
+#category {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/*
+Προσθήκη κενού ανάμεσα στα κουμπιά για περισσότερη διαφάνεια
+και ρύθμιση μεγέθους.
+*/
+.cart {
+	height: 7vh;
+}
+
+.contact {
+    height: 5vh;
+}
+
+.contactbtn input[type="submit"] {
+    font-size: 17px;
+    height: 35px;
+}
+
+.cart input[type="submit"]{
+    font-size: 17px;
+    height: 35px;
+}
+
+.back {
+    height: 7vh;
+}
+
+.back a input[type="button"] {
+    font-size: 17px; 
+    width: 90px; 
+    height: 35px; 
+}
+
+/*
+Τροποποιήση μεγεθών πίνακα και ορίων.
+*/
+table {
+    border-collapse: collapse;
+    font-size: 17pt;
+    margin: auto;
+    width: 70%;
+    line-height: 150%;
+}
+
+/*
+Ορισμός χρώματος ορίων
+*/
+table, td, th {
+    border: 1px solid  #454d64; 
+}
+
+legend {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*
+Font για κύριο περιεχόμενο.
+*/
+@font-face {
+    font-family: "ibm";
+    src: url(fonts/IBMPlexSans-Regular.ttf);
+}
+
+/*
+Font για header, navbar, footer.
+*/
+@font-face {
+    font-family: "ibm_bold";
+    src: url(fonts/IBMPlexSans-Bold.ttf);
+}
+
+/*
+Αφαίρεση resize από το textarea
+*/
+textarea {
+    resize: none;
+}

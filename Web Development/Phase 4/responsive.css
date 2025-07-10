@@ -1,0 +1,305 @@
+/*
+Μορφοποίηση για όλες τις οθόνες.
+Αλλαγές σε πολλαπλά πλάτη οθονών για την καλύτερη εμφάνιση της ιστοσελίδας.
+*/
+@media screen {
+    .product {
+        font-size: 10pt;
+    }
+    .product p {
+        font-size: 13pt;
+    }
+    .creator figure img {
+        height:50%;
+    }
+    .grid_aircondition, .grid_fridge {
+        width: 100%;
+        margin-left: 1%;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-column-gap: 15px;
+    }
+    .grid-container {
+        width: 100%;
+        grid-row-gap: 2%;
+        margin-left: 0.1%;
+        margin-bottom: 15%;
+    }
+    .grid-container .category {
+        margin-left: 3%;
+        height: 50px;
+        margin-top: 5%;
+    }
+    .grid_aboutus .creator figure {
+        height: 100%;
+        width: 100%;
+    }
+    label {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    .contact label {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 1255px){
+    figcaption {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 1219px){
+    .product p{
+        font-size: 14pt;
+    }
+    .product{
+        font-size: 13pt;
+    }
+    .grid_aircondition, .grid_fridge, .images, .contact {
+       grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-row-gap: 1%;
+        margin-bottom: 25%;
+    }
+    .grid-container .category {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    figcaption {
+        font-size: 12pt;
+    }
+    .category {
+        grid-column: span 2;
+        font-size: 10pt;
+    }
+    .grid-container {
+        width: 95%;
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    header h1 {
+        font-size: 22pt;
+    }
+    .navbar {
+        justify-content: space-around;
+    }
+    .navbar a, p, footer {
+        font-size: 13pt;
+    }
+    .product p{
+        font-size: 13pt;
+    }
+    .product{
+        font-size: 11pt;
+    }
+    .grid_product {
+        width: 80%;
+        margin-left: 11%;
+    }
+    td {
+        font-size: 14pt;
+    }
+    .grid-container {
+        grid-template-rows: auto;
+        grid-row-gap: 0.3%;
+    }
+    .category {
+        margin-bottom: 2%;
+    }
+    .product {
+        padding-top: 0%;
+        padding-bottom: 0%;
+        height: 100%;
+    }
+    .grid_aboutus .creator {
+        margin-left: 1%;
+    }
+    .contact label {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    fieldset {
+        display: grid;
+        width: 95%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    header h1 {
+        font-size: 19pt;
+    }
+    header img {
+        height: 58%;
+    }
+    .navbar a {
+        font-size: 12pt;
+    }
+    p, footer {
+        font-size: 13pt;
+    }
+    .category h2 {
+        font-size: 17pt;
+    }
+    .main h2{
+        font-size: 14pt;
+    }
+    .grid-contact {
+        width: 85%;
+        margin-left: 3%;
+    }
+}
+@media screen and (max-width: 766px) {
+    header h1 {
+        font-size: 15pt;
+    }
+    header img {
+        height: 55%;
+    }
+    .navbar {
+        justify-content: space-around;
+    }
+    .navbar a{
+        font-size: 10.1pt;
+    }
+    p, footer {
+        font-size: 13pt;
+    }
+    .category h2 {
+        font-size: 14pt;
+    }
+    .main h2{
+        font-size: 14pt;
+    }
+    .images {
+        grid-column-gap: 20px;
+    }
+}
+@media screen and (max-width: 670px) {
+    header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        height: 78%;
+    }
+    header h1 {
+        padding-top: 3%;
+        font-size: 15pt;
+    }
+    header img{
+        float: left;
+        height: 90%;
+
+    }
+    .navbar {
+        height: 0;
+    }
+    header .dropdown {
+        height: min-content;
+        position: absolute;
+        top: 4%;
+        left: 2%;
+    }
+    p, footer {
+        font-size: 12pt;
+    }
+    .grid_aircondition, .grid_fridge, .images, .grid-container, .grid_aboutus, .contact {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+    .grid-container .category {
+        grid-column: span 1;
+        margin-left: 1%;
+    }
+    .category h2 {
+        font-size: 13pt;
+    }
+    .images .image img{
+        max-width: 80%;
+    }
+    td {
+        font-size: 12pt;
+    }  
+    .product {
+        max-width: 70%;
+        margin-left: 11%;
+    } 
+    .product p {
+        font-size: 12pt;
+    }
+    .grid_aboutus {
+        grid-gap: 0%;
+    }
+    .contact {
+        padding-bottom: 10%;
+        margin-left: -1%;
+    }
+    .grid-contact {
+        grid-row-gap: 4%;
+    }
+}
+
+img, header, .navbar, footer {
+    max-width: 100%;
+}
+
+/*
+Dropdown που θα αντικαταστήσει την γραμμή πλοήγησης η οποία δεν κρίνεται
+εύχρηστη για μικρότερες οθόνες.
+*/
+.dropbtn {
+    background-color: #667292;
+    color: #f1e3dd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .dropdown {
+    height: 0;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    justify-content: center;
+    display: none;
+    position: fixed;
+    left: 2%;
+    background-color: #667292;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #f1e3dd;
+    font-size: 10pt;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .dropdown-content a:hover {background-color: #59617e}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #59617e;
+  }

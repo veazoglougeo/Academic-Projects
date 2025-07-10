@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="ourcss.css">
+        <link rel="stylesheet" href="grid.css"> 
+        <link rel="stylesheet" href="responsive.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/img_general/icon.jpg" type="image/gif" sizes="16x16">
+        <title>Εγγραφή</title>
+        <meta charset="UTF-8">
+        <meta name="Αρχική" content="Αυτό το πεδίο περιλαμβάνει πληροφορίες σχετικά με την εγγραφή χρήστη.">
+        <meta name="author" content="Γιώργος Βεάζογλου, Βασιλική Δρόσου">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="register.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html" id="link">
+                    <img src="images/img_general/logo.png"><h1>Aueb household appliances</h1>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">&#9776;</button>
+                <div class="dropdown-content">
+                    <a href ="index.html">Αρχική</a>
+                    <a href ="categories.html">Κατηγορίες</a>
+                    <a href ="aboutus.html">About us</a>
+                    <a href="contact.html">Επικοινωνία</a>
+                    <a href="register.html">Εγγραφή</a>
+                </div>
+            </div>
+        </header>
+        <div class="navbar">
+            <a href ="index.html">Αρχική</a>
+            <a href ="categories.html">Κατηγορίες</a>
+            <a href ="aboutus.html">About us</a>
+            <a href="contact.html">Επικοινωνία</a>
+            <a class="active" href="register.html">Εγγραφή</a>
+        </div>
+        <div class="main">
+            <h2>Φόρμα εγγραφής χρήστη</h2>
+            <p>
+                Δημιουργήστε τον προσωπικό σας λογαριασμό!<br>
+                Συμπληρώστε τα στοιχεία σας και ο λογαριασμός θα δημιουργηθεί αυτόματα.
+            </p>
+            <div id="error"></div>
+            <form id="form">
+                <div class="grid-register">
+                    <fieldset class="register">
+                        <legend>Στοιχεία πελάτη</legend>
+                        <div>
+                            <label for="fname">Όνομα: </label>
+                            <input type="text" id="fname" name="firstname" minlength="3" maxlength="20" placeholder="Δημήτρης" required>
+                            <label for="lname">Επώνυμο: </label>
+                            <input type="text" id="lname"  name="lastname" minlength="3" maxlength="20" placeholder="Παπαδόπουλος" required>
+                            <label for="date">Ημερομηνία γέννησης:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail: </label>
+                            <input type="text" id="email"  name="email" minlength="5" maxlength="30" placeholder="e-mail@example.com" required>
+                            <label for="telnum">Τηλέφωνο: </label>
+                            <input type="tel" id="telnum"  name="telephone" minlength="10" maxlength="10" placeholder="2321012345" required>
+                            <label for="telnum">Εναλλακτικό τηλέφωνο: </label>
+                            <input type="tel" id="telnum2"  name="telephone2" minlength="10" maxlength="10" placeholder="6912378965">
+                        </div>
+                        <div>
+                            <label for="address">Διεύθυνση :</label>
+                            <input type="text" id="address" name="address" minlength="3" maxlength="30" placeholder="28ης Οκτωβρίου" required> 
+                            <label for="pcode">Ταχυδρομικός κώδικας: </label>
+                            <input type="text" id="pcode" name="pcode" minlength="5" maxlength="5" placeholder="11147" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="register">
+                        <legend>Στοιχεία ταυτοποίησης</legend>
+                        <div>
+                            <label for="username">Όνομα χρήστη: </label>
+                            <input type="text" id="username" name="username" minlength="6" maxlength="20" placeholder="Username" required>
+                        </div>
+                        <div>
+                            <label for="password">Κωδικός χρήστη: </label>
+                            <input type="password" id="password" name="password" minlength="10" maxlength="20" placeholder="Password" required>
+                        </div>
+                        <div>
+                            <label for="confirm">Επιβεβαίωση κωδικού: </label>
+                            <input type="password" id="confirm" name="confirm" minlength="10" maxlength="20" placeholder="Password" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="register">
+                        <legend>Επιλογή επικοινωνίας</legend>
+                        <div>
+                            <label for="communication">Τρόπος επικοινωνίας: </label>
+                            <select id="communication" name="communication" required>
+                                <option value="SMS">SMS</option>
+                                <option value="Viber">Viber</option>
+                                <option value="Email">Email</option>
+                                <option value="WhatsApp">WhatsApp</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="adverts">Επιθυμείτε να λαμβάνετε ειδοποιήσεις για διαφημήσεις;</label>
+                            <input type="checkbox" id="adverts">
+                        </div>
+                        <div>
+                            <label for="offers">Επιθυμείτε να λαμβάνετε ειδοποιήσεις προσφορές;</label>
+                            <input type="checkbox" id="offers">
+                        </div>
+                    </fieldset>
+                    <fieldset class="questions">
+                        <legend>Σύντομο ερωτηματολόγιο</legend>
+                        <div class="question">
+                            <label><b>Συσκεύη μαγειρικής που προτιμάτε: </b></label>
+                            <label for="oven">Φούρνος</label>
+                            <input type="radio" id="oven" name="cooking">
+                            <label for="microwave">Φούρνος μικροκυμάτων</label>
+                            <input type="radio" id="microwave" name="cooking">
+                            <label for="airfryer">Air fryer</label>
+                            <input type="radio" id="airfryer" name="cooking">
+                            <label for="stove">Κεραμικό μάτι κουζίνας</label>
+                            <input type="radio" id="stove" name="cooking">
+                            <label for="other_cooking">Άλλο</label>
+                            <input type="radio" id="other_cooking" name="cooking">
+                        </div>
+                        <div class="question">
+                            <label><b>Συσκευή που χρησιοποιείτε περισσότερο: </b></label>
+                            <label for="fridge">Ψυγείο</label>
+                            <input type="radio" id="fridge" name="appliance">
+                            <label for="washing-machine">Πλυντήριο ρούχων</label>
+                            <input type="radio" id="washing-machine" name="appliance">
+                            <label for="air-conditioner">Κλιματιστικό</label>
+                            <input type="radio" id="air-conditioner" name="appliance">
+                            <label for="electric-stove">Ηλεκτρική κουζίνα</label>
+                            <input type="radio" id="electric-stove" name="appliance">
+                            <label for="other_appliance">Άλλο</label>
+                            <input type="radio" id="other_appliance" name="appliance">
+                        </div>
+                        <div class="question">
+                            <label><b>Τύπος αγγελιών που προτιμάτε: </b></label>
+                            <label for="home">Οικιακές συσκευές</label>
+                            <input type="radio" id="home" name="type">
+                            <label for="fashion">Ρουχισμός</label>
+                            <input type="radio" id="fashion" name="type">
+                            <label for="tech">Τεχνολογία</label>
+                            <input type="radio" id="tech" name="type">
+                            <label for="deco">Διακόσμηση</label>
+                            <input type="radio" id="deco" name="type">
+                            <label for="hobby">Hobby-Αθλητισμός</label>
+                            <input type="radio" id="hobby" name="type">
+                        </div>
+                        <div class="question">  
+                            <label><b>Συχνότητα online αγορών: </b></label>
+                            <label for="daily">Καθημερινά</label>
+                            <input type="radio" id="daily" name="frequency">
+                            <label for="weekly">Εβδομαδιαία</label>
+                            <input type="radio" id="weekly" name="frequency">
+                            <label for="monthly">Μηνιαία</label>
+                            <input type="radio" id="monthly" name="frequency">
+                            <label for="anually">Ετήσια</label>
+                            <input type="radio" id="anually" name="frequency">
+                        </div>
+                        <div class="question">
+                            <label><b>Επαγγελματικό προφίλ: </b></label>
+                            <label for="owner">Ιδιώτης</label>
+                            <input type="radio" id="owner" name="job">
+                            <label for="employeed">Υπάλληλος</label>
+                            <input type="radio" id="employeed" name="job">
+                            <label for="partner">Συνεργάτης</label>
+                            <input type="radio" id="partner" name="job">
+                            <label for="other_job">Άλλο</label>
+                            <input type="radio" id="other_job" name="job">
+                        </div>
+                        <div class="question">
+                            <label><b>Γνώμη για την ιστοσελίδα μας: </b></label>
+                            <label for="very-good">Πολύ καλή</label>
+                            <input type="radio" id="very-good" name="opinion">
+                            <label for="good">Καλή</label>
+                            <input type="radio" id="good" name="opinion">
+                            <label for="mediocre">Μέτρια</label>
+                            <input type="radio" id="mediocre" name="opinion">
+                            <label for="bad">Κακή</label>
+                            <input type="radio" id="bad" name="opinion">
+                            <label for="terrible">Πολύ κακή</label>
+                            <input type="radio" id="terrible" name="opinion">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="contactbtn">
+                    <input type="submit" value="Υποβολή">
+                </div>
+            </form>
+        </div>
+        <footer>
+            Στοιχεία επικοινωνίας:
+            <span><i class="fa-regular fa-envelope fa-bounce"></i> E-mail: auebhouse@gmail.com</span>
+            <span><i class="fa-solid fa-phone fa-shake"></i> Τηλέφωνο: 6976728341</span>
+            <a id="link" href="https://www.instagram.com/"><i style="font-size:18px" class="fa-brands fa-instagram fa-beat"></i> Instagram: @aueb_house</a>
+        </footer>
+    </body>
+</html>
